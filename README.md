@@ -19,7 +19,7 @@ Feel free to request additional features as well  ass add your own recipes via p
 
 ## Installation
 
-Download and install the latest version of Sitecore module here. 
+Download and install the latest version of Sitecore module [here](https://github.com/adoprog/Sitecore-Flow/releases). 
 
 ## Usage
 
