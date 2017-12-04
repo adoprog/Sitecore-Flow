@@ -1,5 +1,5 @@
 # Sitecore-Flow
-![sitecore flow](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/connectors.png)
+![sitecore flow](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/connectors.png | width=300)
 
 ## About
 Sitecore Flow is a free, open source Sitecore / Microsoft Flow connector. 
