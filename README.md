@@ -13,7 +13,7 @@ Connect Sitecore to hundreds of services including:
 
 Let the service providers take care of updating their connectors in the cloud and start integrating new systems with Sitecore without developers help.
 
-Initial release includes custom save action for Web Forms for Marketers module, which allows you to easily map your web form fields to the actions in Microsoft Flow.
+Initial release includes custom save action for [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) module, which allows you to easily map your web form fields to the actions in Microsoft Flow.
 
 Feel free to request additional features as well  ass add your own recipes via pull requests.
 
@@ -45,7 +45,7 @@ That's it! Now all Web Form submits will be posted to Microsoft Flow. With a few
 
 ## Features
 
-Send Sitecore [Web Forms for Marketers form](https://doc.sitecore.net/web_forms_for_marketers) submit data to [Microsoft Flow](https://flow.microsoft.com/)
+Send Sitecore [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) form submit data to [Microsoft Flow](https://flow.microsoft.com/)
 Supports Sitecore 7, 8
 
 ## Coming features
