@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xamlControls
+  xmlns:x="http://www.sitecore.net/xaml"
+  xmlns:ajax="http://www.sitecore.net/ajax"
+  xmlns:rest="http://www.sitecore.net/rest"
+  xmlns:r="http://www.sitecore.net/renderings"
+  xmlns:xmlcontrol="http://www.sitecore.net/xmlcontrols"
+  xmlns:p="http://schemas.sitecore.net/Visual-Studio-Intellisense"
+  xmlns:asp="http://www.sitecore.net/microsoft/webcontrols"
+  xmlns:html="http://www.sitecore.net/microsoft/htmlcontrols"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:wfm="http://www.sitecore.net/wfm/webcontrols">
+
+  <Sitecore.Flow.Dialogs.PostToFlow x:inherits="Sitecore.Flow.Dialogs.PostToFlowPage, Sitecore.Flow">
+    <x:register assembly="ComponentArt.Web.UI" namespace="ComponentArt.Web.UI" />
+    <x:register assembly="Sitecore.Forms.Core" namespace="Sitecore.Forms.Shell.UI.Controls"/>
+
+    <Sitecore.Controls.DialogPage Icon="Business/32x32/businessman_edit.png" runat="server">
+
+      <AjaxScriptManager runat="server"/>
+      <ContinuationManager runat="server" />
+      <Stylesheet Src="WFM/ComboBoxWithNestedContent.css" DeviceDependant="true" runat="server" />
+      <Style runat="server" x:placeholder="Stylesheets">
+        .EntryGrid {
+        padding:0px 4px 2px 2px;
+        }
+
+        .EntryGrid td {
+        white-space:nowrap;
+        }
+
+        .TabStrip {
+        position:relative;
+        top:2px;
+        z-index:1;
+        }
+
+        .DefaultTab {
+        color:black;
+        background-image: url(/sitecore/shell/themes/standard/ComponentArt/Tabstrip/tab_bg.gif);
+        font-family:Tahoma;
+        font-size:8pt;
+        cursor:default;
+        }
+
+        .DefaultTabHover {
+        color:black;
+        background-image: url(/sitecore/shell/themes/standard/ComponentArt/Tabstrip/hover_tab_bg.gif);
+        font-family:Tahoma;
+        font-size:8pt;
+        cursor:default;
+        }
+
+        .SelectedTab {
+        color:black;
+        background-image: url(/sitecore/shell/themes/standard/ComponentArt/Tabstrip/selected_tab_bg.gif);
+        font-family:Tahoma;
+        font-size:8pt;
+        cursor:default;
+        }
+
+        .MultiPage {
+        background-color:White;
+        border: 1px solid #919B9C;
+        width:100%;
+        height:100%;
+        }
+
+        .PageContent {
+        background:#fbfbfb;
+        }
+
+        .scText,
+        .scPassword,
+        .scLookup,
+        .scChecklist {
+        width:100%;
+        }
+
+        .scMemo {
+        width:100%;
+        height:120px;
+        }
+
+        .scCheckbox {
+        }
+
+        .scFieldLabel {
+        color:#6487DC;
+        padding:4px 0px 2px 0px;
+        background:white;
+        border:none;
+        }
+
+        .ProfileRight{
+        width : 49%;
+        display:inline;
+        }
+
+        .ProfileLeft{
+        float : left;
+        display:inline;
+        }
+
+        .GroupBox
+        {
+
+        border-bottom : 0px;
+        border-right : 0px;
+        border-left : 0px;
+
+
+        margin:20px;
+        }
+
+        .CheckboxSetting label
+        {
+        margin-top:-5px;
+        }
+
+        .CallBack{
+        margin-top:15px;
+        }
+
+        .MappingGrid
+        {
+        width:100%;
+        padding: 1px 5px;
+        }
+
+        input[type="checkbox"] {
+        margin: 5px;
+        }
+      </Style>
+      <script type="text/javascript" language="javascript">
+        function OnConditionItemStateChanged(sender, args){
+        var nodes = sender.select('input[type="checkbox"]');
+
+        if (nodes.first().checked){
+        var element = nodes.first().next();
+        ConditionCombobox.set_text(element.innerText || element.innerHTML);
+        }
+        else
+        {
+        var text = "";
+        nodes.each(function(node){
+        if (node.checked){
+        text = text + ", " + node.next().innerHTML;
+        }
+        });
+
+        if (text.blank()){
+        text = sc.dictionary['Never'];
+        }
+
+        if (text.startsWith(",")){
+        text = text.substring(2);
+        }
+        ConditionCombobox.set_text(text);
+        }
+        }
+
+        document.observe('dom:loaded', function() {
+        $$('[id$=ConditionCombobox_Input]').first().readOnly = true;
+        })
+      </script>
+
+      <html:HtmlInputHidden ID="ContactsListsHidden" runat="server" />
+
+      <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td height="100%" vAlign="top">
+
+            <Groupbox runat="Server" Header="How to use this action" Class="section">
+              <Border Class="help" Height="100%" GridPanel.Width="100%" GridPanel.Height="100%" GridPanel.VAlign="top" Margin="10 0 0 0" runat="server">
+                <div style="background-color:white">
+                  1. Create a new "When a HTTP request is received" trigger in Microsoft Flow <br/>
+                  2. Copy "HTTP POST URL" field value from Microsoft Flow to the field below.<br/>
+                  3. Copy "Request Body JSON Schema" field value from the field below to Microsoft Flow<br/>
+                  4. Now you can start integrating Sitecore with any connector available in Microsoft Flow<br/>
+                </div>
+              </Border>
+            </Groupbox>
+            
+            <Groupbox runat="Server" Header="HTTP POST URL" Class="section">
+              <Edit ID="TriggerAddress" Value="" Style="width:100%" Margin="0 0 0 0" EnableViewState="false" runat="server"/>
+            </Groupbox>
+
+            <Groupbox runat="Server" Header="Request Body JSON Schema" Class="section">
+              <Border runat="server" Height="350px" GridPanel.Height="100%" GridPanel.vAlign="top" >
+                <asp:TextBox ID="FlowSchema"  runat="server" Width="100%" Height="90%" TextMode="MultiLine" onsubmit="return false;" style="margin: 2px 0px 0px 4px"></asp:TextBox>
+              </Border>
+            </Groupbox>
+          </td>
+        </tr>
+      </table>
+
+    </Sitecore.Controls.DialogPage>
+  </Sitecore.Flow.Dialogs.PostToFlow>
+</xamlControls>
+
