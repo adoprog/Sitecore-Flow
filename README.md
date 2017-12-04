@@ -29,7 +29,7 @@ First create the web form (or use a sample one) and add a "Send to Microsoft Flo
 
 ![form actions](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/wffm_dialog.png)
 
-Then create blank Microsoft Flow and a trigger called "When a HTTP request is received" to it. Paste the text from clipboard to the "Request Body JSON Schema" field
+Then [create](https://emea.flow.microsoft.com/en-us/) a blank Microsoft Flow and choose a trigger called "When a HTTP request is received" to it. Paste the text from clipboard to the "Request Body JSON Schema" field
 
 ![flow trigger](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/flow%20trigger%20empty.png)
 
