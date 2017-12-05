@@ -39,9 +39,9 @@ Now add any action (required to get the post URL), save the Flow and copy the "H
 
 That's it! Now all Web Form submits will be posted to Microsoft Flow. With a few clicks you can build the flow for your form.
 
-![dynamics](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/crm%20connector.png)
+![dynamics](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/crm%20connector.png)   ![form fields](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/form_fields.png)
 
-![form fields](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/form_fields.png)
+![flow](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/sitecoreflow.png)
 
 ## Features
 
