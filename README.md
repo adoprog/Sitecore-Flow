@@ -41,6 +41,8 @@ That's it! Now all Web Form submits will be posted to Microsoft Flow. With a few
 
 ![dynamics](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/crm%20connector.png)   ![form fields](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/form_fields.png)
 
+Here is the sample with Dynamics, Slack, and custom condition in on Flow:
+
 ![flow](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/sitecoreflow.png)
 
 ## Features
