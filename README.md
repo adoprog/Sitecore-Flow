@@ -49,7 +49,9 @@ Send Sitecore [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_m
 Supports Sitecore 7, 8
 
 ## Coming features
-TODO
+* Push Sitecore content items to Flow
+* Analytics Support
+* Two-way integration
 
 ## License
 MIT License
