@@ -45,10 +45,11 @@ That's it! Now all Web Form submits will be posted to Microsoft Flow. With a few
 
 ## Features
 
-Send Sitecore [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) form submit data to [Microsoft Flow](https://flow.microsoft.com/)
-Supports Sitecore 7, 8
+* Send Sitecore [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) form submit data to [Microsoft Flow](https://flow.microsoft.com/)
+* Supports Sitecore 7, 8
 
 ## Coming features
+
 * Push Sitecore content items to Flow
 * Analytics Support
 * Two-way integration
