@@ -215,7 +215,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Sitecore.Flow.config" />
+    <Content Include="App_Config\Include\Sitecore.Flow.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -232,7 +234,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actions\PostToFlow.cs" />
-    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Dialogs\PostToFlowPage.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
