@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xamlControls
+  xmlns:x="http://www.sitecore.net/xaml"
+  xmlns:ajax="http://www.sitecore.net/ajax"
+  xmlns:rest="http://www.sitecore.net/rest"
+  xmlns:javascript="http://www.sitecore.net/javascript"
+  xmlns:r="http://www.sitecore.net/renderings"
+  xmlns:xmlcontrol="http://www.sitecore.net/xmlcontrols"
+  xmlns:p="http://schemas.sitecore.net/Visual-Studio-Intellisense"
+  xmlns:asp="http://www.sitecore.net/microsoft/webcontrols"
+  xmlns:html="http://www.sitecore.net/microsoft/htmlcontrols"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <Sitecore.Flow.Dialogs.Pages.Schema x:inherits="Sitecore.Flow.Dialogs.Pages.SchemaPage, Sitecore.Flow">
+    <Sitecore.Controls.ModalDialogPage Header="Item JSON Schema" Text="Copy 'Request Body JSON Schema' field value from the field below to the Microsoft Flow" runat="server">
+      <AjaxScriptManager runat="server"/>
+      <ContinuationManager runat="server" />
+
+      <asp:TextBox ID="FlowSchema"  runat="server" Width="100%" Height="100%" TextMode="MultiLine" onsubmit="return false;" style="margin: 0px 0px 0px 0px"></asp:TextBox>
+
+    </Sitecore.Controls.ModalDialogPage>
+  </Sitecore.Flow.Dialogs.Pages.Schema>
+</xamlControls>

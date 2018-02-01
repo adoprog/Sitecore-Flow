@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Web;
 using Sitecore.Data;
 using Sitecore.Diagnostics;
+using Sitecore.Flow.Helpers;
 using Sitecore.WFFM.Abstractions.Actions;
 using Sitecore.WFFM.Actions.Base;
 
@@ -22,8 +23,9 @@ namespace Sitecore.Flow.Actions
     {
       Assert.ArgumentNotNull(adaptedFields, nameof(adaptedFields));
 
+      var requestor = new Requestor();
       var fields = GetFieldsJson(adaptedFields);
-      Task.Run(() => PostRequest(fields));
+      Task.Run(() => requestor.PostRequest(TriggerAddress, fields));
     }
 
     private static string GetFieldsJson(AdaptedResultList adaptedFields)
@@ -40,33 +42,6 @@ namespace Sitecore.Flow.Actions
       sb.Append(fieldDescriptors.Aggregate((i, j) => i + "," + j));
       sb.Append("}");
       return sb.ToString();
-    }
-
-    private void PostRequest(string json)
-    {
-      try
-      {
-        var httpWebRequest = (HttpWebRequest) WebRequest.Create(TriggerAddress);
-        httpWebRequest.ContentType = "application/json";
-        httpWebRequest.Method = "POST";
-
-        using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
-        {
-          streamWriter.Write(json);
-          streamWriter.Flush();
-          streamWriter.Close();
-        }
-
-        var httpResponse = (HttpWebResponse) httpWebRequest.GetResponse();
-        using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-        {
-          var result = streamReader.ReadToEnd();
-        }
-      }
-      catch (Exception ex)
-      {
-        Log.Error("PostToFlow: Action failed to execute", ex);
-      }
     }
   }
 }
