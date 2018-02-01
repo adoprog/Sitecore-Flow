@@ -59,7 +59,7 @@ Here is the sample with Dynamics, Slack, and custom condition in on Flow:
 ## License
 MIT License
 
-Copyright (c) 2017 Alexander Doroshenko
+Copyright (c) 2018 Alexander Doroshenko
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
