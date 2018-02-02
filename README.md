@@ -8,6 +8,7 @@ Connect Sitecore to hundreds of services including:
 * Salesforce
 * Dynamics
 * SharePoint
+* Office 365
 * Docusign
 * and [more](https://flow.microsoft.com/en-us/connectors/)
 
