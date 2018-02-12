@@ -8,6 +8,7 @@ Connect Sitecore to hundreds of services including:
 * Salesforce
 * Dynamics
 * SharePoint
+* Office 365
 * Docusign
 * and [more](https://flow.microsoft.com/en-us/connectors/)
 
@@ -48,18 +49,20 @@ Here is the sample with Dynamics, Slack, and custom condition in on Flow:
 ## Features
 
 * Send Sitecore [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) form submit data to [Microsoft Flow](https://flow.microsoft.com/)
-* Supports Sitecore 7, 8 (and likely 9)
+* Send items to Microsoft Flow using Workflow actions (available in v1.0.1)
+* Supports Sitecore 7, 8, 9
 
-## Coming features
+## Planned Features
 
-* Push Sitecore content items to Flow
-* Analytics Support
-* Two-way integration
+* Send Analytics session data to Microsoft Flow
+* Sitecore 9: Forms
+* Sitecore 9: Automation
+* Rules Engine
 
 ## License
 MIT License
 
-Copyright (c) 2017 Alexander Doroshenko
+Copyright (c) 2018 Alexander Doroshenko
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
