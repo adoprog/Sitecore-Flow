@@ -6,5 +6,3 @@ before_install:
   - mono .nuget/nuget.exe # Output NuGet's version number
 install:
   - mono .nuget/nuget.exe restore Sitecore.Flow.sln -Verbosity detailed
-script: 
-  - xbuild /p:Configuration=Release Sitecore.Flow.sln
