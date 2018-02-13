@@ -1,3 +1,5 @@
+[![Build Status]][Appveyor]
+
 # Sitecore-Flow
 <img src="https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/connectors.png" width="300">
 
