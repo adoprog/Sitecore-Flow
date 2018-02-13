@@ -1,4 +1,4 @@
-[![Build Status]][Appveyor]
+<img src="https://ci.appveyor.com/api/projects/status/github/adoprog/Sitecore-Flow">
 
 # Sitecore-Flow
 <img src="https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/connectors.png" width="300">
