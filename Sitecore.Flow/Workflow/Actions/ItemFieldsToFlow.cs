@@ -3,10 +3,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using Sitecore.Configuration;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Flow.Helpers;
 using Sitecore.Links;
+using Sitecore.Sites;
 using Sitecore.Workflows.Simple;
 
 namespace Sitecore.Flow.Workflow.Actions
@@ -36,8 +38,14 @@ namespace Sitecore.Flow.Workflow.Actions
       sb.Append("{");
       var fieldDescriptors = new List<string>();
       var urlOptions = new UrlOptions();
-      urlOptions.AlwaysIncludeServerUrl = true;
-      fieldDescriptors.Add($" \"ItemUrl\" : \"{LinkManager.GetItemUrl(item, urlOptions)}\" ");
+      urlOptions.AlwaysIncludeServerUrl = false;
+
+      // TODO: Take this value from action parameters
+      urlOptions.Site = SiteContext.GetSite("website");
+      var url = LinkManager.GetItemUrl(item, urlOptions);
+      url = url.Replace(" ", "%20");
+      url = Settings.GetSetting("Sitecore.Flow.Actions.ServerUrl") + url;
+      fieldDescriptors.Add($" \"ItemUrl\" : \"{url}\" ");
 
       foreach (Field field in item.Fields)
       {
