@@ -230,6 +230,7 @@
     <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\Schema\Schema.xaml.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="sitecore\shell\Applications\FormsBuilder\Layouts\Actions\SendToFlow.js" />
     <Content Include="sitecore\shell\Applications\Modules\Web Forms for Marketers\Dialogs\Action Editor\PostToFlow.xaml.xml">
       <SubType>Designer</SubType>
     </Content>
