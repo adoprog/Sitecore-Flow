@@ -244,6 +244,8 @@
     <Compile Include="Commands\ShowSchema.cs" />
     <Compile Include="Dialogs\Pages\SchemaPage.cs" />
     <Compile Include="Dialogs\PostToFlowPage.cs" />
+    <Compile Include="ExperienceForms\Actions\Models\SendToFlowActionData.cs" />
+    <Compile Include="ExperienceForms\Actions\SendToFlow.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="Helpers\Requestor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
