@@ -1,0 +1,33 @@
+{
+  "name": "sitecore.flow",
+  "version": "1.0.0",
+  "description": "Sitecore Flow Marketing Automation",
+  "private": true,
+  "angular-cli": {},
+  "scripts": {
+    "predev": "npm install && rimraf ./codegen/",
+    "dev": "ngc -p ./src/tsconfig.aot.json && npm run build",
+    "prebuild": "rimraf ./dist/",
+    "build": "webpack --display-error-details"
+  },
+  "dependencies": {
+    "@angular/common": "4.3.5",
+    "@angular/core": "4.3.5",
+    "@angular/forms": "4.3.5",
+    "@angular/http": "4.3.5",
+    "@angular/platform-browser": "4.3.5",
+    "@ngx-translate/core": "^7.2.0",
+    "@sitecore/ma-core": "file:C:/resourcefiles/ma-core",
+    "rxjs": "^5.4.3",
+    "zone.js": "^0.8.16"
+  },
+  "devDependencies": {
+    "@angular/compiler": "4.3.5",
+    "@angular/compiler-cli": "4.3.5",
+    "copyfiles": "^1.2.0",
+    "rimraf": "^2.6.1",
+    "ts-loader": "^2.3.4",
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.5"
+  }
+}
