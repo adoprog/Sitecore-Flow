@@ -3,7 +3,7 @@
     <metadata>
       <PackageName>Sitecore Flow</PackageName>
       <Author>Alexander Doroshenko</Author>
-      <Version>1.1,0</Version>
+      <Version>1.1,1</Version>
       <Revision />
       <License />
       <Comment />
@@ -182,6 +182,8 @@
       <Name>Forms Editor</Name>
     </items>
     <items>
+      <Database>master</Database>
+      <Root>{9B170515-9510-4AFC-9C20-E84540C54CFB}</Root>
       <SkipVersions>False</SkipVersions>
       <Converter>
         <ItemToEntryConverter>
@@ -226,8 +228,6 @@
       </Include>
       <Exclude />
       <Name>Forms Action</Name>
-      <Database>master</Database>
-      <Root>{9B170515-9510-4AFC-9C20-E84540C54CFB}</Root>
     </items>
     <xfiles>
       <Entries>
@@ -244,6 +244,8 @@
       <Name>Forms Editor Script</Name>
     </xfiles>
     <items>
+      <Database>master</Database>
+      <Root>{1179F625-38B5-4D3A-8BE5-1BB781B394A0}</Root>
       <SkipVersions>False</SkipVersions>
       <Converter>
         <ItemToEntryConverter>
@@ -288,10 +290,10 @@
       </Include>
       <Exclude />
       <Name>Templates</Name>
-      <Database>master</Database>
-      <Root>{1179F625-38B5-4D3A-8BE5-1BB781B394A0}</Root>
     </items>
     <items>
+      <Database>master</Database>
+      <Root>{10377E02-FDD5-42FB-A20C-136A401104E4}</Root>
       <SkipVersions>False</SkipVersions>
       <Converter>
         <ItemToEntryConverter>
@@ -336,8 +338,54 @@
       </Include>
       <Exclude />
       <Name>Workflow Insert Option Rule</Name>
+    </items>
+    <items>
       <Database>master</Database>
-      <Root>{10377E02-FDD5-42FB-A20C-136A401104E4}</Root>
+      <Root>{5017A646-29EE-4859-BBE8-8B8CDB62FA94}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Marketing Automation Activity</Name>
     </items>
   </Sources>
   <Converter>
