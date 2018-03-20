@@ -3,7 +3,7 @@
     <metadata>
       <PackageName>Sitecore Flow</PackageName>
       <Author>Alexander Doroshenko</Author>
-      <Version>1.1,1</Version>
+      <Version>1.1,2</Version>
       <Revision />
       <License />
       <Comment />
@@ -19,6 +19,7 @@
     <xfiles>
       <Entries>
         <x-item>/App_Config/Include/Sitecore.Flow.config</x-item>
+        <x-item>/App_Config/Include/Sitecore.Flow.MarketingAutomation.config</x-item>
       </Entries>
       <Converter>
         <FileToEntryConverter>
@@ -387,6 +388,20 @@
       <Exclude />
       <Name>Marketing Automation Activity</Name>
     </items>
+    <xfiles>
+      <Entries>
+        <x-item>/sitecore/shell/client/Applications/MarketingAutomation/plugins/sitecore-flow.plugin.js</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Plugin JS Code</Name>
+    </xfiles>
   </Sources>
   <Converter>
     <TrivialConverter>
