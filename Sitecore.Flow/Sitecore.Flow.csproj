@@ -74,44 +74,8 @@
     <Reference Include="RazorGenerator.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\RazorGenerator.Mvc.2.4.2\lib\net40\RazorGenerator.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Abstractions, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Abstractions.8.2.170728\lib\NET452\Sitecore.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.8.2.170728\lib\NET452\Sitecore.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics.Aggregation, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Aggregation.8.2.170728\lib\NET452\Sitecore.Analytics.Aggregation.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics.Automation, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Automation.8.2.170728\lib\NET452\Sitecore.Analytics.Automation.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics.Core, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Core.8.2.170728\lib\NET452\Sitecore.Analytics.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics.DataAccess, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.DataAccess.8.2.170728\lib\NET452\Sitecore.Analytics.DataAccess.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics.Model, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Model.8.2.170728\lib\NET452\Sitecore.Analytics.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics.Processing, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Processing.8.2.170728\lib\NET452\Sitecore.Analytics.Processing.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Client, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Client.8.2.170728\lib\NET452\Sitecore.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.8.2.170728\lib\NET452\Sitecore.ContentSearch.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ContentSearch.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.Analytics.8.2.170728\lib\NET452\Sitecore.ContentSearch.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.Linq.8.2.170728\lib\NET452\Sitecore.ContentSearch.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ExperienceEditor, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ExperienceEditor.8.2.170728\lib\NET452\Sitecore.ExperienceEditor.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Client.NoReferences.8.2.171121\lib\NET452\Sitecore.Client.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ExperienceForms, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.ExperienceForms.NoReferences.9.0.171219\lib\NET462\Sitecore.ExperienceForms.dll</HintPath>
@@ -120,61 +84,19 @@
       <HintPath>..\packages\Sitecore.ExperienceForms.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.ExperienceForms.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Forms.Core, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Forms.Core.8.2.170807\lib\NET452\Sitecore.Forms.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Forms.Custom, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Forms.Custom.8.2.170807\lib\NET452\Sitecore.Forms.Custom.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Forms.Core.NoReferences.8.2.171103\lib\NET452\Sitecore.Forms.Core.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Kernel.8.2.170728\lib\NET452\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Kernel.NoReferences.8.2.171121\lib\NET452\Sitecore.Kernel.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.ListManagement, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ListManagement.8.2.170728\lib\NET452\Sitecore.ListManagement.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ListManagement.ContentSearch, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ListManagement.ContentSearch.8.2.170728\lib\NET452\Sitecore.ListManagement.ContentSearch.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Logging, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Logging.8.2.170728\lib\NET452\Sitecore.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Logging.Client, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Logging.Client.8.2.170728\lib\NET452\Sitecore.Logging.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Marketing, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Marketing.8.2.170728\lib\NET452\Sitecore.Marketing.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Marketing.Core, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Marketing.Core.8.2.170728\lib\NET452\Sitecore.Marketing.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Marketing.Taxonomy, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Marketing.Taxonomy.8.2.170728\lib\NET452\Sitecore.Marketing.Taxonomy.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Mvc.8.2.170728\lib\NET452\Sitecore.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.NVelocity, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.NVelocity.8.2.170728\lib\NET452\Sitecore.NVelocity.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.SegmentBuilder, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.SegmentBuilder.8.2.170728\lib\NET452\Sitecore.SegmentBuilder.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Web, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Web.8.2.170728\lib\NET452\Sitecore.Web.dll</HintPath>
+    <Reference Include="Sitecore.WFFM, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.WFFM.NoReferences.8.2.171103\lib\NET452\Sitecore.WFFM.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.WFFM.Abstractions, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.WFFM.Abstractions.8.2.170807\lib\NET452\Sitecore.WFFM.Abstractions.dll</HintPath>
+      <HintPath>..\packages\Sitecore.WFFM.Abstractions.NoReferences.8.2.171103\lib\NET452\Sitecore.WFFM.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.WFFM.Actions, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.WFFM.Actions.8.2.170807\lib\NET452\Sitecore.WFFM.Actions.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Xdb.Client, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Xdb.Client.8.2.170728\lib\NET452\Sitecore.Xdb.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Xdb.Configuration, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Xdb.Configuration.8.2.170728\lib\NET452\Sitecore.Xdb.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Zip, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Zip.8.2.170728\lib\NET452\Sitecore.Zip.dll</HintPath>
+      <HintPath>..\packages\Sitecore.WFFM.Actions.NoReferences.8.2.171103\lib\NET452\Sitecore.WFFM.Actions.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
