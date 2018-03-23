@@ -89,6 +89,15 @@
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Kernel.NoReferences.8.2.171121\lib\NET452\Sitecore.Kernel.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Marketing.Automation, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Marketing.Automation.NoReferences.9.0.171219\lib\NET462\Sitecore.Marketing.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Marketing.Automation.Activity, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Marketing.Automation.Activity.NoReferences.9.0.171219\lib\NET462\Sitecore.Marketing.Automation.Activity.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Marketing.Automation.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Marketing.Automation.Models.NoReferences.9.0.171219\lib\NET462\Sitecore.Marketing.Automation.Models.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.WFFM, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.WFFM.NoReferences.8.2.171103\lib\NET452\Sitecore.WFFM.dll</HintPath>
     </Reference>
@@ -97,6 +106,15 @@
     </Reference>
     <Reference Include="Sitecore.WFFM.Actions, Version=8.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.WFFM.Actions.NoReferences.8.2.171103\lib\NET452\Sitecore.WFFM.Actions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.XConnect.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect.Collection.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.XConnect.Collection.Model.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.Collection.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Xdb.MarketingAutomation.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Xdb.MarketingAutomation.Core.NoReferences.9.0.171219\lib\NET462\Sitecore.Xdb.MarketingAutomation.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
@@ -155,6 +173,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MarketingAutomation\sc.MarketingAutomation.ActivityTypes.xml" />
     <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\Schema\Schema.xaml.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -173,6 +192,7 @@
     <Compile Include="ExperienceForms\Actions\SendToFlow.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="Helpers\Requestor.cs" />
+    <Compile Include="MarketingAutomation\Activities\SendToFlow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Workflow\Actions\ItemFieldsToFlow.cs" />
   </ItemGroup>

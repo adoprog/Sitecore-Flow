@@ -1,0 +1,19 @@
+﻿<Settings>
+    <!--
+    Marketing Automation activity type registrations.
+  -->
+    <Sitecore>
+        <XConnect>
+            <Services>
+                <MarketingAutomationDemo.Activity.SendToFlowActivity>
+                    <Type>Sitecore.Xdb.MarketingAutomation.Locator.ActivityTypeRegistration, Sitecore.Xdb.MarketingAutomation</Type>
+                    <LifeTime>Singleton</LifeTime>
+                    <Options>
+                        <Id>{5017A646-29EE-4859-BBE8-8B8CDB62FA94}</Id>
+                        <ImplementationType>Sitecore.Flow.MarketingAutomation.Activities.SendToFlowActivity, Sitecore.Flow</ImplementationType>
+                    </Options>
+                </MarketingAutomationDemo.Activity.SendToFlowActivity>
+            </Services>
+        </XConnect>
+    </Sitecore>
+</Settings>
