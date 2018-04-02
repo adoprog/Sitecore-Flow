@@ -28,11 +28,6 @@ Make sure you have Web Forms for Marketers module installed or use the version w
 * Sitecore 9: Automation (available in v1.1.3 and up)
 * Supports Sitecore 7, 8, 9
 
-## Planned Features
-
-* Rules Engine
-* Send Analytics session data to Microsoft Flow
-
 ## Usage
 
 First create the web form (or use a sample one) and add a "Send to Microsoft Flow" action to it. Copy the "Request Body JSON Schema" field value to the clipboard.
