@@ -18,6 +18,44 @@ import {
                         <input type="text" class="form-control" [(ngModel)]="triggerAddress"/>
                     </div>
                 </div>
+                <div class="row">
+                    <p></p>
+                </div>
+                <div class="row readonly-editor">
+                    <label class="col-12 title">Request Body JSON Schema</label>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <textarea style="width:100%;height:200px;" readonly>
+{
+    "type": "object",
+    "properties": {
+        "Email": {
+            "type": "string"
+        },
+        "FirstName": {
+            "type": "string"
+        },
+        "MiddleName": {
+            "type": "string"
+        },
+        "LastName": {
+            "type": "string"
+        },
+        "PreferredLanguage": {
+            "type": "string"
+        },
+        "Title": {
+            "type": "string"
+        },
+        "JobTitle": {
+            "type": "string"
+        }
+    }
+}                        
+                        </textarea>                    
+                    </div>
+                </div>
             </div>
         </section>
     `,
