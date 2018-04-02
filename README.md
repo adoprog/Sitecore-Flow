@@ -21,7 +21,8 @@ Feel free to request additional features as well  ass add your own recipes via p
 ## Installation
 
 Download the latest version of the module [here](https://github.com/adoprog/Sitecore-Flow/releases). Install the module using Installation Wizard.
-Make sure you have Web Forms for Marketers module installed.
+
+Make sure you have Web Forms for Marketers module installed or use the version with "*_no_WFFM" suffix.
 
 ## Usage
 
@@ -52,11 +53,11 @@ Here is the sample with Dynamics, Slack, and custom condition in on Flow:
 * Send Sitecore [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) form submit data to [Microsoft Flow](https://flow.microsoft.com/)
 * Send items to Microsoft Flow using Workflow actions (available in v1.0.1 and up)
 * Sitecore 9: Experience Forms (available in v1.1.0 and up)
+* Sitecore 9: Automation (available in v1.1.3 and up)
 * Supports Sitecore 7, 8, 9
 
 ## Planned Features
 
-* Sitecore 9: Automation
 * Rules Engine
 * Send Analytics session data to Microsoft Flow
 
