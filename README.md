@@ -14,15 +14,24 @@ Connect Sitecore to hundreds of services including:
 
 Let the service providers take care of updating their connectors in the cloud and start integrating new systems with Sitecore without developers help.
 
-Initial release includes custom save action for [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) module, which allows you to easily map your web form fields to the actions in Microsoft Flow.
-
-Feel free to request additional features as well  ass add your own recipes via pull requests.
-
 ## Installation
 
 Download the latest version of the module [here](https://github.com/adoprog/Sitecore-Flow/releases). Install the module using Installation Wizard.
 
 Make sure you have Web Forms for Marketers module installed or use the version with "*_no_WFFM" suffix.
+
+## Features
+
+* Send Sitecore [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) form submit data to [Microsoft Flow](https://flow.microsoft.com/)
+* Send items to Microsoft Flow using Workflow actions (available in v1.0.1 and up)
+* Sitecore 9: Experience Forms (available in v1.1.0 and up)
+* Sitecore 9: Automation (available in v1.1.3 and up)
+* Supports Sitecore 7, 8, 9
+
+## Planned Features
+
+* Rules Engine
+* Send Analytics session data to Microsoft Flow
 
 ## Usage
 
@@ -47,19 +56,6 @@ That's it! Now all Web Form submits will be posted to Microsoft Flow. With a few
 Here is the sample with Dynamics, Slack, and custom condition in on Flow:
 
 ![flow](https://github.com/adoprog/Sitecore-Flow/raw/master/wiki/images/sitecoreflow.png)
-
-## Features
-
-* Send Sitecore [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) form submit data to [Microsoft Flow](https://flow.microsoft.com/)
-* Send items to Microsoft Flow using Workflow actions (available in v1.0.1 and up)
-* Sitecore 9: Experience Forms (available in v1.1.0 and up)
-* Sitecore 9: Automation (available in v1.1.3 and up)
-* Supports Sitecore 7, 8, 9
-
-## Planned Features
-
-* Rules Engine
-* Send Analytics session data to Microsoft Flow
 
 ## License
 MIT License
