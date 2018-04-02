@@ -6,9 +6,7 @@ Sitecore Flow is a free, open source Sitecore / Microsoft Flow connector.
 Connect Sitecore to hundreds of services including:
 
 * Salesforce
-* Dynamics
-* SharePoint
-* Office 365
+* Office 365 (incl. Dynamics CRM, SharePoint, etc.)
 * Docusign
 * and [more](https://flow.microsoft.com/en-us/connectors/)
 
