@@ -16,7 +16,7 @@ Let the service providers take care of updating their connectors in the cloud an
 
 ## Installation
 
-Download the latest version of the module [here](https://github.com/adoprog/Sitecore-Flow/releases). Install the module using Installation Wizard.
+Download the latest version of the module [here](https://github.com/adoprog/Sitecore-Flow/releases). Install the module using the Installation Wizard.
 
 Make sure you have Web Forms for Marketers module installed or use the version with "*_no_WFFM" suffix.
 
