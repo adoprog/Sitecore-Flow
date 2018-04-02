@@ -52,7 +52,7 @@ Here is the sample with Dynamics, Slack, and custom condition in on Flow:
 * Send Sitecore [Web Forms for Marketers](https://doc.sitecore.net/web_forms_for_marketers) form submit data to [Microsoft Flow](https://flow.microsoft.com/)
 * Send items to Microsoft Flow using Workflow actions (available in v1.0.1 and up)
 * Sitecore 9: Experience Forms (available in v1.1.0 and up)
-* Sitecore 9: Automation
+* Sitecore 9: Automation (available in v1.1.3 and up)
 * Supports Sitecore 7, 8, 9
 
 ## Planned Features
