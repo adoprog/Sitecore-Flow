@@ -21,7 +21,8 @@ Feel free to request additional features as well  ass add your own recipes via p
 ## Installation
 
 Download the latest version of the module [here](https://github.com/adoprog/Sitecore-Flow/releases). Install the module using Installation Wizard.
-Make sure you have Web Forms for Marketers module installed.
+
+Make sure you have Web Forms for Marketers module installed or use the version with "*_no_WFFM" suffix.
 
 ## Usage
 
