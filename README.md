@@ -7,7 +7,7 @@ Connect Sitecore to hundreds of services including:
 
 * Salesforce
 * Office 365 (incl. Dynamics CRM, SharePoint, etc.)
-* Docusign
+* DocuSign
 * and [more](https://flow.microsoft.com/en-us/connectors/)
 
 Let the service providers take care of updating their connectors in the cloud and start integrating new systems with Sitecore without developers help.
