@@ -25,6 +25,7 @@ Make sure you have Web Forms for Marketers module installed or use the version w
 * Sitecore 9: Experience Forms (available in v1.1.0 and up)
 * Sitecore 9: Automation (available in v1.1.3 and up)
 * Supports Sitecore 7, 8, 9
+* See [Wiki](https://github.com/adoprog/Sitecore-Flow/wiki) for more info and usage guides
 
 ## Usage
 
